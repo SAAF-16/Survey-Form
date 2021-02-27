@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <header>
+        <h1 id="title"> DotSpot Survey Form</h1>
+        <p id="description">Thanks for taking the time to 
+            help us improve our costumer experience </p>
+    </header>
+    <div id="form-background">
+        <form  action="" id="survey-form">
+            <div >
+                <label for="name" id="name-label">Name</label>
+                <input id="name" required type="text" placeholder="Enter your name">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" placeholder="Enter your email">
+                <label for="number" id="number-label">Number</label>
+                <input id="number" required min="1" max="9999999999" type="number" placeholder="Enter your number">
+                <label for="age" id="age-label" >Age(optional)</label>
+                <input id="age" type="number" min="1" max="100" placeholder="Enter your age">
+            </div>
+            <br>
+            <div class="cacca" >
+                <p>Would you suggest DotSpot to a collegue?</p>
+                <label for="">Yes<input name="user-choice" value="yes" checked type="radio"></label>      
+                <label for="">No<input name="user-choice" value="no" type="radio"></label>  
+                <label for="">Not sure<input name="user-choice" value="maybe" type="radio"></label>
+            </div>
+            <br>
+            <div >
+                <p>What did you enjoy the most?</p>
+                <select name="scelta" id="dropdown">
+                    <option disabled selected value="">Select an option </option>
+                    <option value="music">Lo-Fi music in the background</option>
+                    <option value="internet">Fast internet connection</option>
+                    <option value="newspaper">Design Pattern newspapers</option>
+                    <option value="customer service">Customer service</option>
+                </select>
+            </div>
+            <br>
+            <div class="row">
+                <p>What would you like us to improve? (check all that apply)</p>
+                <label for="">
+                    More plants in the couch area <input value="plants" type="checkbox">
+                </label>
+                <label for="">
+                    More diverse playlists<input value="music" type="checkbox">
+                </label>
+                <label for="">
+                    Different table organizing<input value="tables" type="checkbox">
+                </label>
+                <label for="">
+                    More coffee and tea flavours<input value="coffee" type="checkbox">
+                </label>
+                <label for="">
+                    Different times for focus meetings<input value="meetings" type="checkbox">
+                </label>
+                <label for="">
+                    Less staff walking around<input value="staff" type="checkbox">
+                </label>
+                <label for="">
+                    Different Ligthing<input value="light" type="checkbox">
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="">Any comments or suggestions?</label>
+                <textarea  name="comments" id="comments-area" cols="30" rows="10" placeholder="Enter your comments or suggestions here.."></textarea>
+                <br>
+               <input id="submit" type="submit">     
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>

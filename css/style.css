@@ -1,0 +1,96 @@
+:root{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background:rgba(231, 186, 169, 0.469) url(https://i.postimg.cc/wBHH6Cd4/background.jpg) no-repeat center fixed;
+        background-blend-mode:overlay;
+        background-size: cover;
+        display: flexbox;
+    
+    
+    }
+    body{
+        margin: 20px auto;
+        font-size: medium;
+     
+    }
+    #form-background{
+        background-color:rgba(231, 92, 42, 0.796);
+        border-radius: 30px;
+        padding: 30px 40px;
+        display: flexbox;
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    #title{
+      border:thin;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 0.6px #000000b8;
+        background-color:rgba(231, 92, 42, 0.796);
+      max-width:400px;
+     margin:0 auto;
+    
+    }
+    #description{
+      border:thin;
+      
+    text-align: center;
+    color: white;
+    text-shadow: 2px 0.6px #000000b8;
+          background-color:rgba(165, 42, 42, 0.782);
+      max-width:600px;
+     margin:0 auto;
+    
+    }
+    form div{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: c;
+    }
+    .cacca{
+    text-align: center;
+    display:block;
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+    
+    }
+    div > input{
+        padding: 7px;
+       border: thin;
+       border-radius: 2px;
+    }
+    
+    label, p{
+        color: white;
+        margin: 10px 0px 5px ;
+        text-shadow: 1px 0.6px #000000b8;
+    }
+    input[type=checkbox],input[type=radio] {
+        float: right;
+      }
+      label {
+        display: block;
+        overflow: hidden;
+        width: 70%;
+      }
+      textarea{
+          resize:none
+      }
+      select{
+          padding:7px;
+          border: thin;
+          border-radius: 2px;
+      }
+      #submit{
+        display:block;
+      }
+      @media(max-width:600px){
+        body{
+            font-size: smaller;
+        }
+      }
